@@ -16,6 +16,7 @@ footer_file_name="${header_footer_name}_footer.html"
 # Find the header and footer files
 header_file=$(find . -name "$header_file_name" 2>/dev/null | head -n 1)
 footer_file=$(find . -name "$footer_file_name" 2>/dev/null | head -n 1)
+input_file=$(find . -name "$input_file" 2>/dev/null | head -n 1)
 
 # Check if header and footer files exist
 if [ -z "$header_file" ] || [ -z "$footer_file" ]; then
